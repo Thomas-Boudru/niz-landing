@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Niz Privacy Policy — Learn how Niz processes and protects your personal data."
+  />
+
+  <title>Privacy Policy — Niz</title>
+
+  <!-- Favicon uniquement pour l'onglet du navigateur -->
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #0a0714;
+      --panel: #171029;
+      --panel-line: #2c2246;
+
+      --ink: #f4f1fc;
+      --ink-dim: #aaa1c8;
+      --ink-mute: #7d75a0;
+
+      --violet: #6d5afb;
+      --pink: #e8a0fa;
+      --cyan: #7fe3fd;
+
+      --grad: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        var(--pink) 26%,
+        var(--violet) 60%,
+        var(--cyan) 100%
+      );
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* -----------------------------
+       BACKGROUND
+    ----------------------------- */
+
+    .background {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .glow {
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(90px);
+    }
+
+    .glow-one {
+      width: 620px;
+      height: 620px;
+
+      top: -310px;
+      right: -170px;
+
+      background: rgba(232, 160, 250, 0.17);
+    }
+
+    .glow-two {
+      width: 520px;
+      height: 520px;
+
+      top: 320px;
+      left: -320px;
+
+      background: rgba(109, 90, 251, 0.13);
+    }
+
+    .glow-three {
+      width: 440px;
+      height: 440px;
+
+      bottom: -260px;
+      right: 5%;
+
+      background: rgba(127, 227, 253, 0.08);
+    }
+
+    /* -----------------------------
+       NAVBAR
+    ----------------------------- */
+
+    header {
+      position: relative;
+      z-index: 10;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      background: rgba(10, 7, 20, 0.74);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1180px;
+
+      margin: 0 auto;
+      padding: 17px 32px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .back-link {
+      color: var(--ink-dim);
+      font-size: 14px;
+      font-weight: 600;
+
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+    }
+
+    /* -----------------------------
+       PAGE
+    ----------------------------- */
+
+    main {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+
+      margin: 0 auto;
+
+      padding:
+        92px
+        32px
+        120px;
+    }
+
+    /* -----------------------------
+       HERO
+    ----------------------------- */
+
+    .legal-hero {
+      padding-bottom: 52px;
+
+      border-bottom: 1px solid var(--panel-line);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+
+      margin-bottom: 18px;
+
+      color: var(--ink-dim);
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(
+        120deg,
+        var(--pink),
+        var(--cyan)
+      );
+
+      box-shadow:
+        0 0 14px rgba(127, 227, 253, 0.5);
+    }
+
+    h1,
+    h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(42px, 7vw, 66px);
+      line-height: 1;
+
+      font-weight: 700;
+    }
+
+    .gradient-text {
+      background: var(--grad);
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .intro {
+      max-width: 680px;
+
+      margin-top: 24px;
+
+      color: var(--ink-dim);
+
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .updated {
+      margin-top: 24px;
+
+      color: var(--ink-mute);
+
+      font-size: 13px;
+    }
+
+    /* -----------------------------
+       CONTENT
+    ----------------------------- */
+
+    .legal-content {
+      padding-top: 26px;
+    }
+
+    .legal-section {
+      padding:
+        34px
+        0;
+
+      border-bottom: 1px solid var(--panel-line);
+    }
+
+    .section-number {
+      display: block;
+
+      margin-bottom: 8px;
+
+      font-family: "Bricolage Grotesque", sans-serif;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      color: var(--violet);
+    }
+
+    h2 {
+      margin:
+        0
+        0
+        18px;
+
+      font-size: 24px;
+      line-height: 1.25;
+
+      font-weight: 700;
+    }
+
+    p {
+      margin:
+        0
+        0
+        16px;
+
+      color: var(--ink-dim);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin:
+        16px
+        0
+        18px;
+
+      padding-left: 22px;
+
+      color: var(--ink-dim);
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .legal-content a {
+      color: var(--cyan);
+    }
+
+    .legal-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* -----------------------------
+       SPECIAL CARDS
+    ----------------------------- */
+
+    .operator-card,
+    .provider-card,
+    .contact-card {
+      margin-top: 20px;
+
+      padding: 22px 24px;
+
+      border:
+        1px solid
+        var(--panel-line);
+
+      border-radius: 18px;
+
+      background:
+        rgba(23, 16, 41, 0.62);
+    }
+
+    .operator-card p,
+    .provider-card p,
+    .contact-card p {
+      margin: 0;
+
+      font-size: 14.5px;
+    }
+
+    .provider-name {
+      display: block;
+
+      margin-bottom: 5px;
+
+      color: var(--ink);
+
+      font-weight: 700;
+    }
+
+    /* -----------------------------
+       IMPORTANT AI NOTICE
+    ----------------------------- */
+
+    .ai-notice {
+      position: relative;
+
+      margin-top: 24px;
+
+      padding: 24px;
+
+      overflow: hidden;
+
+      border:
+        1px solid
+        rgba(109, 90, 251, 0.38);
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(109, 90, 251, 0.12),
+          rgba(232, 160, 250, 0.06)
+        );
+    }
+
+    .ai-notice::before {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      top: -110px;
+      right: -60px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(127, 227, 253, 0.12);
+
+      filter: blur(30px);
+    }
+
+    .ai-notice strong {
+      display: block;
+
+      position: relative;
+
+      margin-bottom: 8px;
+    }
+
+    .ai-notice p {
+      position: relative;
+
+      margin: 0;
+
+      font-size: 14.5px;
+    }
+
+    /* -----------------------------
+       FOOTER
+    ----------------------------- */
+
+    footer {
+      position: relative;
+      z-index: 1;
+
+      border-top:
+        1px solid
+        var(--panel-line);
+    }
+
+    .footer-inner {
+      width: 100%;
+      max-width: 1180px;
+
+      margin: 0 auto;
+
+      padding:
+        38px
+        32px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 24px;
+
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .footer-brand img {
+      width: 27px;
+      height: 27px;
+      object-fit: contain;
+    }
+
+    .footer-brand span {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+      color: var(--ink-mute);
+
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--ink);
+    }
+
+    .copyright {
+      width: 100%;
+
+      margin-top: 2px;
+
+      color: var(--ink-mute);
+
+      font-size: 12px;
+    }
+
+    /* -----------------------------
+       RESPONSIVE
+    ----------------------------- */
+
+    @media (max-width: 700px) {
+      nav {
+        padding:
+          15px
+          20px;
+      }
+
+      .brand img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .page {
+        padding:
+          60px
+          20px
+          80px;
+      }
+
+      .legal-hero {
+        padding-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 43px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .legal-section {
+        padding:
+          30px
+          0;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .operator-card,
+      .provider-card,
+      .contact-card,
+      .ai-notice {
+        padding: 19px;
+      }
+
+      .footer-inner {
+        padding:
+          32px
+          20px;
+      }
+
+      .footer-links {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background -->
+
+  <div
+    class="background"
+    aria-hidden="true"
+  >
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+  </div>
+
+
+  <!-- Navbar -->
+
+  <header>
+    <nav>
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Niz homepage"
+      >
+        <img
+          src="images/logo.png"
+          alt="Niz logo"
+        />
+
+        <span class="brand-name">
+          Niz
+        </span>
+      </a>
+
+      <a
+        class="back-link"
+        href="index.html"
+      >
+        ← Back to Niz
+      </a>
+
+    </nav>
+  </header>
+
+
+  <!-- Content -->
+
+  <main>
+
+    <article class="page">
+
+      <!-- Hero -->
+
+      <div class="legal-hero">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Legal
+        </div>
+
+        <h1>
+          Privacy
+          <span class="gradient-text">
+            Policy
+          </span>
+        </h1>
+
+        <p class="intro">
+          Your conversations are personal.
+          This Privacy Policy explains what information
+          Niz processes, why we process it, and the choices
+          you have when using our Services.
+        </p>
+
+        <p class="updated">
+          Last updated: September 8, 2026
+        </p>
+
+      </div>
+
+
+      <div class="legal-content">
+
+
+        <!-- 1 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            01
+          </span>
+
+          <h2>
+            Who we are
+          </h2>
+
+          <p>
+            Niz ("Niz", "we", "us", or "our") is an
+            AI-powered iOS keyboard designed to help users
+            generate suggested replies based on conversation
+            screenshots they choose to provide.
+          </p>
+
+          <p>
+            Niz is operated by:
+          </p>
+
+          <div class="operator-card">
+
+            <p>
+              <strong>Thomas Boudru</strong><br />
+              Independent business<br />
+              Enterprise number: BE0627.980.869<br />
+              Place du Parc 85<br />
+              4020 Liège<br />
+              Belgium<br /><br />
+
+              Email:
+              <a href="mailto:hey@joinniz.com">
+                hey@joinniz.com
+              </a>
+            </p>
+
+          </div>
+
+          <p style="margin-top: 20px;">
+            For the purposes of applicable data protection
+            law, including the General Data Protection
+            Regulation ("GDPR"), Thomas Boudru is the data
+            controller for personal data processed by Niz,
+            except where a third-party provider acts as an
+            independent controller.
+          </p>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            02
+          </span>
+
+          <h2>
+            Scope of this Privacy Policy
+          </h2>
+
+          <p>
+            This Privacy Policy explains how Niz processes
+            personal data when you use the Niz application,
+            keyboard extension, website and related services
+            (collectively, the "Services").
+          </p>
+
+          <p>
+            Niz is intended only for individuals aged
+            18 or older.
+          </p>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            03
+          </span>
+
+          <h2>
+            How Niz works
+          </h2>
+
+          <p>
+            Niz helps you compose replies to conversations.
+          </p>
+
+          <p>
+            When you request a suggestion, you may choose
+            to provide one or more screenshots containing
+            a conversation. Niz processes the content of
+            those screenshots in order to understand the
+            context of the conversation and generate
+            suggested replies.
+          </p>
+
+          <p>
+            <strong>
+              Niz does not continuously read or monitor
+              the content displayed on your screen.
+            </strong>
+          </p>
+
+          <p>
+            Nothing generated by Niz is automatically sent
+            to another person. You remain responsible for
+            choosing whether to use, modify or send a
+            suggested reply.
+          </p>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            04
+          </span>
+
+          <h2>
+            Personal data we process
+          </h2>
+
+          <p>
+            Depending on what appears in a screenshot you
+            choose to provide, Niz may temporarily process:
+          </p>
+
+          <ul>
+            <li>
+              written messages and conversation content;
+            </li>
+
+            <li>
+              names, usernames or profile names;
+            </li>
+
+            <li>
+              profile pictures or other images;
+            </li>
+
+            <li>
+              dates, times and other information visible
+              in the screenshot;
+            </li>
+
+            <li>
+              any other information that you or another
+              person has included in the captured
+              conversation.
+            </li>
+          </ul>
+
+          <p>
+            Because you determine what appears in the
+            screenshots you provide, they may contain
+            personal data relating both to you and to
+            other individuals.
+          </p>
+
+          <p>
+            We ask you not to provide screenshots containing
+            information that is unnecessary for the generation
+            of a reply, particularly highly sensitive
+            information.
+          </p>
+
+          <p>
+            At present, Niz does not require you to create
+            a user account.
+          </p>
+
+          <p>
+            Niz does not currently use advertising trackers
+            or third-party analytics tools.
+          </p>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            05
+          </span>
+
+          <h2>
+            Why we process this data
+          </h2>
+
+          <p>
+            Conversation screenshots and their contents are
+            processed for the purpose of providing the
+            functionality you request: understanding the
+            relevant conversation context and generating
+            suggested replies.
+          </p>
+
+          <p>
+            Where required under applicable law, processing
+            is based on your consent and/or is necessary to
+            provide the service that you have explicitly
+            requested.
+          </p>
+
+          <p>
+            You decide whether and when to submit a
+            screenshot for processing.
+          </p>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            06
+          </span>
+
+          <h2>
+            Use of artificial intelligence and OpenAI
+          </h2>
+
+          <p>
+            To generate suggested replies, Niz uses
+            artificial intelligence services provided
+            by OpenAI.
+          </p>
+
+          <div class="ai-notice">
+
+            <strong>
+              Important information about AI processing
+            </strong>
+
+            <p>
+              When you request an AI-generated reply,
+              the screenshot(s) and/or information extracted
+              from them may be transmitted to OpenAI for
+              processing. This can include personal data
+              relating to you or other individuals appearing
+              in the conversation.
+            </p>
+
+          </div>
+
+          <p style="margin-top: 22px;">
+            This means that conversation content, including
+            personal data relating to you or other individuals
+            appearing in a screenshot, may be processed by
+            OpenAI for the purpose of generating the
+            requested response.
+          </p>
+
+          <p>
+            Niz does not authorize OpenAI to use API inputs
+            and outputs for training its models. According
+            to OpenAI's current API data policies, API inputs
+            and outputs are not used to train OpenAI models
+            by default unless the API customer explicitly
+            opts in.
+          </p>
+
+          <p>
+            OpenAI may nevertheless retain certain API
+            inputs and outputs for a limited period for
+            purposes including service provision, security
+            and abuse prevention, subject to OpenAI's
+            applicable data retention policies and the
+            particular API services used.
+          </p>
+
+          <p>
+            You will be informed that content is transmitted
+            to OpenAI and, where required, asked for permission
+            before such transmission occurs.
+          </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            07
+          </span>
+
+          <h2>
+            Screenshot storage and retention
+          </h2>
+
+          <p>
+            <strong>
+              Niz does not maintain a stored archive of the
+              screenshots you submit for AI generation.
+            </strong>
+          </p>
+
+          <p>
+            Screenshots are processed for the purpose of
+            fulfilling your generation request and are not
+            intentionally persisted by Niz as part of a
+            conversation history.
+          </p>
+
+          <p>
+            However, information transmitted to OpenAI is
+            subject to OpenAI's own processing and retention
+            practices. OpenAI currently states that, for most
+            API services, API inputs and outputs may be
+            retained for up to 30 days for service operation
+            and abuse monitoring, unless a different
+            retention arrangement applies.
+          </p>
+
+          <p>
+            We may also retain information where required
+            to comply with a legal obligation, resolve a
+            dispute or protect our legal rights.
+          </p>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            08
+          </span>
+
+          <h2>
+            Data relating to other people
+          </h2>
+
+          <p>
+            Screenshots you provide may contain information
+            about another person, such as a conversation
+            partner.
+          </p>
+
+          <p>
+            You should only provide content that you are
+            lawfully entitled to use and should avoid
+            submitting unnecessary, highly sensitive,
+            confidential or private information.
+          </p>
+
+          <p>
+            You are responsible for the content you choose
+            to submit through Niz.
+          </p>
+
+          <p>
+            Niz is designed to minimize processing by
+            allowing you to choose when and what content
+            is submitted for AI processing.
+          </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            09
+          </span>
+
+          <h2>
+            Third-party service providers
+          </h2>
+
+          <p>
+            At present, the principal third-party provider
+            that receives conversation content for AI
+            generation is:
+          </p>
+
+          <div class="provider-card">
+
+            <span class="provider-name">
+              OpenAI
+            </span>
+
+            <p>
+              Purpose: artificial intelligence processing
+              and generation of suggested replies.
+            </p>
+
+          </div>
+
+          <p style="margin-top: 20px;">
+            We may introduce additional technical service
+            providers in the future. If this materially
+            changes how your personal data is processed,
+            this Privacy Policy will be updated accordingly.
+          </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            10
+          </span>
+
+          <h2>
+            International data transfers
+          </h2>
+
+          <p>
+            Some service providers used by Niz may process
+            personal data outside Belgium or the European
+            Economic Area.
+          </p>
+
+          <p>
+            Where personal data is transferred internationally,
+            we seek to rely on appropriate safeguards required
+            by applicable data protection law, including
+            applicable adequacy decisions, contractual
+            safeguards or other lawful transfer mechanisms.
+          </p>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            11
+          </span>
+
+          <h2>
+            Security
+          </h2>
+
+          <p>
+            We take reasonable technical and organizational
+            measures designed to protect personal data
+            processed through Niz against unauthorized
+            access, loss, misuse, alteration or disclosure.
+          </p>
+
+          <p>
+            However, no internet transmission or electronic
+            processing system can be guaranteed to be
+            completely secure.
+          </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            12
+          </span>
+
+          <h2>
+            Your rights under the GDPR
+          </h2>
+
+          <p>
+            If the GDPR applies to you, you may have the
+            right to:
+          </p>
+
+          <ul>
+            <li>
+              obtain information about the processing of
+              your personal data;
+            </li>
+
+            <li>
+              request access to your personal data;
+            </li>
+
+            <li>
+              request correction of inaccurate personal data;
+            </li>
+
+            <li>
+              request deletion of your personal data;
+            </li>
+
+            <li>
+              request restriction of processing;
+            </li>
+
+            <li>
+              object to certain processing;
+            </li>
+
+            <li>
+              receive certain personal data in a portable
+              format;
+            </li>
+
+            <li>
+              withdraw consent at any time where processing
+              is based on consent.
+            </li>
+          </ul>
+
+          <p>
+            Withdrawal of consent does not affect the
+            lawfulness of processing carried out before
+            withdrawal.
+          </p>
+
+          <p>
+            Because Niz does not currently maintain user
+            accounts or a persistent archive of submitted
+            screenshots, we may not always hold information
+            that allows us to identify or retrieve a
+            particular screenshot after a generation request
+            has been completed.
+          </p>
+
+          <p>
+            To exercise your rights, contact
+            <a href="mailto:hey@joinniz.com">
+              hey@joinniz.com
+            </a>.
+          </p>
+
+          <p>
+            We may need to verify your identity before
+            responding to a request.
+          </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            13
+          </span>
+
+          <h2>
+            Right to lodge a complaint
+          </h2>
+
+          <p>
+            You have the right to lodge a complaint with
+            the competent data protection authority.
+          </p>
+
+          <p>
+            In Belgium, the supervisory authority is the
+            Belgian Data Protection Authority
+            (Autorité de protection des données /
+            Gegevensbeschermingsautoriteit).
+          </p>
+
+          <p>
+            You may also contact the supervisory authority
+            of the EU Member State in which you live or
+            work, where applicable.
+          </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            14
+          </span>
+
+          <h2>
+            Children
+          </h2>
+
+          <p>
+            <strong>
+              Niz is intended exclusively for users aged
+              18 or older.
+            </strong>
+          </p>
+
+          <p>
+            We do not knowingly offer Niz to children or
+            knowingly collect personal data directly from
+            individuals under 18 through the Services.
+          </p>
+
+          <p>
+            If you believe that a person under 18 has
+            provided personal data to Niz, please contact
+            us at
+            <a href="mailto:hey@joinniz.com">
+              hey@joinniz.com
+            </a>.
+          </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            15
+          </span>
+
+          <h2>
+            Changes to this Privacy Policy
+          </h2>
+
+          <p>
+            We may update this Privacy Policy when Niz
+            changes, when we introduce new providers or
+            features, or when legal requirements change.
+          </p>
+
+          <p>
+            The "Last updated" date at the top of this
+            Policy indicates when it was most recently
+            revised.
+          </p>
+
+          <p>
+            Material changes may also be communicated
+            through the application or website where
+            appropriate.
+          </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section class="legal-section">
+
+          <span class="section-number">
+            16
+          </span>
+
+          <h2>
+            Contact
+          </h2>
+
+          <p>
+            For any privacy-related question or request:
+          </p>
+
+          <div class="contact-card">
+
+            <p>
+              <strong>Thomas Boudru</strong><br />
+              Niz<br />
+              Enterprise number: BE0627.980.869<br />
+              Place du Parc 85<br />
+              4020 Liège<br />
+              Belgium<br /><br />
+
+              Email:
+              <a href="mailto:hey@joinniz.com">
+                hey@joinniz.com
+              </a>
+            </p>
+
+          </div>
+
+        </section>
+
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <a
+        class="footer-brand"
+        href="index.html"
+      >
+
+        <img
+          src="images/logo.png"
+          alt="Niz logo"
+        />
+
+        <span>
+          Niz
+        </span>
+
+      </a>
+
+
+      <div class="footer-links">
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms of Use
+        </a>
+
+        <a href="mailto:hey@joinniz.com">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div class="copyright">
+        © 2026 Niz · Thomas Boudru · BE0627.980.869
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

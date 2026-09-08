@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Niz Terms of Use — Learn the rules that apply when using the Niz app and AI keyboard."
+  />
+
+  <title>Terms of Use — Niz</title>
+
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #0a0714;
+      --panel: #171029;
+      --panel-line: #2c2246;
+
+      --ink: #f4f1fc;
+      --ink-dim: #aaa1c8;
+      --ink-mute: #7d75a0;
+
+      --violet: #6d5afb;
+      --pink: #e8a0fa;
+      --cyan: #7fe3fd;
+
+      --grad: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        var(--pink) 26%,
+        var(--violet) 60%,
+        var(--cyan) 100%
+      );
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .background {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .glow {
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(90px);
+    }
+
+    .glow-one {
+      width: 620px;
+      height: 620px;
+      top: -310px;
+      right: -170px;
+      background: rgba(232, 160, 250, 0.17);
+    }
+
+    .glow-two {
+      width: 520px;
+      height: 520px;
+      top: 320px;
+      left: -320px;
+      background: rgba(109, 90, 251, 0.13);
+    }
+
+    .glow-three {
+      width: 440px;
+      height: 440px;
+      bottom: -260px;
+      right: 5%;
+      background: rgba(127, 227, 253, 0.08);
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      background: rgba(10, 7, 20, 0.74);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1180px;
+
+      margin: 0 auto;
+      padding: 17px 32px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .back-link {
+      color: var(--ink-dim);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+
+      margin: 0 auto;
+
+      padding:
+        92px
+        32px
+        120px;
+    }
+
+    .legal-hero {
+      padding-bottom: 52px;
+      border-bottom: 1px solid var(--panel-line);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+
+      margin-bottom: 18px;
+
+      color: var(--ink-dim);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(
+        120deg,
+        var(--pink),
+        var(--cyan)
+      );
+
+      box-shadow:
+        0 0 14px rgba(127, 227, 253, 0.5);
+    }
+
+    h1,
+    h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(42px, 7vw, 66px);
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .gradient-text {
+      background: var(--grad);
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .intro {
+      max-width: 680px;
+
+      margin-top: 24px;
+
+      color: var(--ink-dim);
+
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .updated {
+      margin-top: 24px;
+      color: var(--ink-mute);
+      font-size: 13px;
+    }
+
+    .legal-content {
+      padding-top: 26px;
+    }
+
+    .legal-section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--panel-line);
+    }
+
+    .section-number {
+      display: block;
+
+      margin-bottom: 8px;
+
+      font-family: "Bricolage Grotesque", sans-serif;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      color: var(--violet);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--ink-dim);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 16px 0 18px;
+      padding-left: 22px;
+      color: var(--ink-dim);
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .legal-content a {
+      color: var(--cyan);
+    }
+
+    .legal-content a:hover {
+      text-decoration: underline;
+    }
+
+    .operator-card,
+    .notice-card,
+    .contact-card {
+      margin-top: 20px;
+
+      padding: 22px 24px;
+
+      border: 1px solid var(--panel-line);
+      border-radius: 18px;
+
+      background: rgba(23, 16, 41, 0.62);
+    }
+
+    .operator-card p,
+    .notice-card p,
+    .contact-card p {
+      margin: 0;
+      font-size: 14.5px;
+    }
+
+    .notice-card {
+      position: relative;
+      overflow: hidden;
+
+      border-color: rgba(109, 90, 251, 0.38);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(109, 90, 251, 0.12),
+          rgba(232, 160, 250, 0.06)
+        );
+    }
+
+    .notice-card::before {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      top: -110px;
+      right: -60px;
+
+      border-radius: 50%;
+
+      background: rgba(127, 227, 253, 0.12);
+
+      filter: blur(30px);
+    }
+
+    .notice-card strong,
+    .notice-card p {
+      position: relative;
+    }
+
+    .notice-card strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+
+      border-top: 1px solid var(--panel-line);
+    }
+
+    .footer-inner {
+      width: 100%;
+      max-width: 1180px;
+
+      margin: 0 auto;
+      padding: 38px 32px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .footer-brand img {
+      width: 27px;
+      height: 27px;
+      object-fit: contain;
+    }
+
+    .footer-brand span {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+      color: var(--ink-mute);
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--ink);
+    }
+
+    .copyright {
+      width: 100%;
+      margin-top: 2px;
+
+      color: var(--ink-mute);
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 15px 20px;
+      }
+
+      .brand img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .page {
+        padding:
+          60px
+          20px
+          80px;
+      }
+
+      .legal-hero {
+        padding-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 43px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .legal-section {
+        padding: 30px 0;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .operator-card,
+      .notice-card,
+      .contact-card {
+        padding: 19px;
+      }
+
+      .footer-inner {
+        padding: 32px 20px;
+      }
+
+      .footer-links {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background" aria-hidden="true">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+  </div>
+
+  <header>
+    <nav>
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Niz homepage"
+      >
+        <img
+          src="images/logo.png"
+          alt="Niz logo"
+        />
+
+        <span class="brand-name">
+          Niz
+        </span>
+      </a>
+
+      <a
+        class="back-link"
+        href="index.html"
+      >
+        ← Back to Niz
+      </a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <article class="page">
+
+      <div class="legal-hero">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Legal
+        </div>
+
+        <h1>
+          Terms of
+          <span class="gradient-text">
+            Use
+          </span>
+        </h1>
+
+        <p class="intro">
+          These Terms explain the rules that apply
+          when using Niz, including AI-generated suggestions,
+          conversation screenshots, acceptable use and your
+          responsibilities as a user.
+        </p>
+
+        <p class="updated">
+          Last updated: September 8, 2026
+        </p>
+
+      </div>
+
+      <div class="legal-content">
+
+        <section class="legal-section">
+
+          <span class="section-number">01</span>
+
+          <h2>
+            About Niz
+          </h2>
+
+          <p>
+            These Terms of Use ("Terms") govern your use of
+            Niz, an AI-powered keyboard and related services
+            that provide suggested replies based on
+            conversation context.
+          </p>
+
+          <p>
+            Niz is operated by:
+          </p>
+
+          <div class="operator-card">
+
+            <p>
+              <strong>Thomas Boudru</strong><br />
+              Independent business<br />
+              Enterprise number: BE0627.980.869<br />
+              Place du Parc 85<br />
+              4020 Liège<br />
+              Belgium<br /><br />
+
+              Email:
+              <a href="mailto:hey@joinniz.com">
+                hey@joinniz.com
+              </a>
+            </p>
+
+          </div>
+
+          <p style="margin-top: 20px;">
+            By using Niz, you agree to these Terms.
+          </p>
+
+          <p>
+            If you do not agree with these Terms,
+            you should not use Niz.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">02</span>
+
+          <h2>
+            Age requirement
+          </h2>
+
+          <p>
+            <strong>
+              You must be at least 18 years old to use Niz.
+            </strong>
+          </p>
+
+          <p>
+            By using Niz, you confirm that you are
+            18 years of age or older.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">03</span>
+
+          <h2>
+            What Niz does
+          </h2>
+
+          <p>
+            Niz is an AI-assisted writing tool.
+          </p>
+
+          <p>
+            You may provide conversation context, including
+            screenshots, and request suggested replies in
+            different styles or tones.
+          </p>
+
+          <p>
+            Niz generates suggestions only.
+          </p>
+
+          <p>
+            <strong>
+              Niz does not automatically send messages
+              to other people.
+            </strong>
+          </p>
+
+          <p>
+            You decide whether to use, modify, copy,
+            insert or send any generated content.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">04</span>
+
+          <h2>
+            AI-generated content
+          </h2>
+
+          <p>
+            Niz uses artificial intelligence to generate
+            suggestions.
+          </p>
+
+          <div class="notice-card">
+
+            <strong>
+              AI suggestions may be wrong
+            </strong>
+
+            <p>
+              Artificial intelligence can make mistakes and
+              may generate content that is inaccurate,
+              inappropriate, offensive, misleading,
+              unsuitable for a particular situation or
+              inconsistent with your intentions.
+            </p>
+
+          </div>
+
+          <p style="margin-top: 22px;">
+            You should review every suggestion before
+            using or sending it.
+          </p>
+
+          <p>
+            You remain responsible for communications that
+            you choose to send using Niz.
+          </p>
+
+          <p>
+            Niz does not guarantee that a suggested message
+            will produce any particular response, reaction,
+            relationship or outcome.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">05</span>
+
+          <h2>
+            Your content
+          </h2>
+
+          <p>
+            You retain any rights you may have in content
+            that you provide to Niz.
+          </p>
+
+          <p>
+            You grant Niz the limited rights necessary to
+            process content you voluntarily submit for the
+            purpose of providing the requested functionality.
+          </p>
+
+          <p>
+            This permission is limited to operating and
+            providing the Services and does not transfer
+            ownership of your content to Niz.
+          </p>
+
+          <p>
+            You are responsible for ensuring that your use
+            of content submitted to Niz complies with
+            applicable law and does not unlawfully infringe
+            the rights or privacy of another person.
+          </p>
+
+          <p>
+            You should not submit content that you are not
+            legally entitled to process or share.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">06</span>
+
+          <h2>
+            Conversation screenshots
+          </h2>
+
+          <p>
+            Niz may allow you to provide screenshots
+            containing messages, names, photographs or other
+            information relating to other people.
+          </p>
+
+          <p>
+            You should only provide screenshots where you
+            are lawfully entitled to do so and should avoid
+            submitting unnecessary sensitive, confidential
+            or private information.
+          </p>
+
+          <p>
+            Screenshots submitted for AI generation are
+            processed as described in the
+            <a href="privacy.html">
+              Niz Privacy Policy
+            </a>.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">07</span>
+
+          <h2>
+            Third-party AI processing
+          </h2>
+
+          <p>
+            Niz currently uses OpenAI technology to generate
+            AI responses.
+          </p>
+
+          <p>
+            When you request a generation, relevant content
+            may therefore be transmitted to and processed
+            by OpenAI.
+          </p>
+
+          <p>
+            Further information about this processing is
+            provided in the
+            <a href="privacy.html">
+              Niz Privacy Policy
+            </a>.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">08</span>
+
+          <h2>
+            Acceptable use
+          </h2>
+
+          <p>
+            You must not use Niz:
+          </p>
+
+          <ul>
+            <li>
+              for unlawful purposes;
+            </li>
+
+            <li>
+              to threaten, harass, stalk, abuse or
+              intimidate another person;
+            </li>
+
+            <li>
+              to impersonate another person for fraudulent
+              or harmful purposes;
+            </li>
+
+            <li>
+              to facilitate fraud, deception or other
+              illegal activity;
+            </li>
+
+            <li>
+              to violate another person's privacy or
+              intellectual property rights;
+            </li>
+
+            <li>
+              to distribute illegal or malicious content;
+            </li>
+
+            <li>
+              to attempt to interfere with, reverse
+              engineer, disrupt or compromise Niz or its
+              infrastructure;
+            </li>
+
+            <li>
+              to circumvent technical, usage or security
+              restrictions;
+            </li>
+
+            <li>
+              to use automated systems to abuse or
+              excessively access the Service;
+            </li>
+
+            <li>
+              in any manner that violates applicable law.
+            </li>
+          </ul>
+
+          <p>
+            We may restrict or terminate access to Niz
+            where reasonably necessary to protect the
+            Service, other people or our legal rights.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">09</span>
+
+          <h2>
+            Third-party services
+          </h2>
+
+          <p>
+            Niz may interact with or be used alongside
+            third-party applications and services,
+            including messaging platforms, dating
+            applications, Apple services and artificial
+            intelligence providers.
+          </p>
+
+          <p>
+            Niz is independent from those third parties
+            unless expressly stated otherwise.
+          </p>
+
+          <p>
+            Third-party services are governed by their
+            own terms and privacy policies.
+          </p>
+
+          <p>
+            The availability or functionality of Niz may
+            be affected by changes made by Apple or other
+            third-party platforms.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">10</span>
+
+          <h2>
+            Intellectual property
+          </h2>
+
+          <p>
+            Niz, including its software, branding, design,
+            logo, interface and original content, is
+            protected by applicable intellectual property
+            laws.
+          </p>
+
+          <p>
+            Except where expressly permitted, you may not
+            copy, reproduce, distribute, sell, license,
+            modify or commercially exploit Niz or any
+            substantial part of the Service.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">11</span>
+
+          <h2>
+            Beta service
+          </h2>
+
+          <p>
+            Niz may be made available as a beta or
+            pre-release service, including through Apple's
+            TestFlight platform.
+          </p>
+
+          <p>
+            Beta software may contain errors, bugs,
+            incomplete functionality or interruptions.
+          </p>
+
+          <p>
+            Features may be changed, added or removed
+            without notice during the beta period.
+          </p>
+
+          <p>
+            You acknowledge that a beta version should not
+            be relied upon as a permanently available or
+            error-free service.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">12</span>
+
+          <h2>
+            Availability
+          </h2>
+
+          <p>
+            We aim to provide a reliable service but do not
+            guarantee that Niz will always be available,
+            uninterrupted, secure or error-free.
+          </p>
+
+          <p>
+            We may modify, suspend or discontinue all or
+            part of the Service where reasonably necessary,
+            subject to any rights you may have under
+            mandatory consumer law.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">13</span>
+
+          <h2>
+            Fees and future paid features
+          </h2>
+
+          <p>
+            Niz may currently provide some or all
+            functionality free of charge during its
+            beta period.
+          </p>
+
+          <p>
+            We may introduce paid functionality,
+            subscriptions or usage limits in the future.
+          </p>
+
+          <p>
+            Any applicable price and payment conditions
+            will be clearly presented before you purchase
+            a paid service.
+          </p>
+
+          <p>
+            Purchases made through Apple's App Store will
+            also be subject to Apple's applicable payment
+            and subscription rules.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">14</span>
+
+          <h2>
+            Disclaimer
+          </h2>
+
+          <p>
+            To the maximum extent permitted by applicable
+            law, Niz is provided on an "as available"
+            basis.
+          </p>
+
+          <p>
+            AI-generated suggestions are provided for
+            assistance and entertainment purposes and
+            should not be considered professional, legal,
+            medical, financial or other expert advice.
+          </p>
+
+          <p>
+            Nothing in these Terms excludes warranties or
+            rights that cannot legally be excluded under
+            applicable consumer law.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">15</span>
+
+          <h2>
+            Limitation of liability
+          </h2>
+
+          <p>
+            To the maximum extent permitted by applicable
+            law, we are not liable for indirect or
+            consequential losses arising solely from your
+            reliance on AI-generated suggestions, your
+            decision to send or use generated content, or
+            the conduct or response of another person.
+          </p>
+
+          <p>
+            You remain responsible for reviewing and
+            deciding whether to send content suggested
+            by Niz.
+          </p>
+
+          <p>
+            Nothing in these Terms excludes or limits
+            liability where doing so would be prohibited
+            by applicable law, including liability for
+            fraud, intentional misconduct, or other
+            liability that cannot lawfully be excluded.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">16</span>
+
+          <h2>
+            Termination
+          </h2>
+
+          <p>
+            You may stop using Niz at any time.
+          </p>
+
+          <p>
+            We may suspend or terminate access where you
+            materially violate these Terms, misuse the
+            Service, create security risks, or where
+            suspension is reasonably necessary for legal
+            or operational reasons.
+          </p>
+
+          <p>
+            Provisions that by their nature should survive
+            termination will continue to apply.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">17</span>
+
+          <h2>
+            Privacy
+          </h2>
+
+          <p>
+            Your use of Niz is also governed by our
+            <a href="privacy.html">
+              Privacy Policy
+            </a>,
+            which explains how personal data is processed.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">18</span>
+
+          <h2>
+            Changes to these Terms
+          </h2>
+
+          <p>
+            We may update these Terms to reflect changes
+            to Niz, applicable law or our business.
+          </p>
+
+          <p>
+            The date at the top indicates when the Terms
+            were last updated.
+          </p>
+
+          <p>
+            Where a change materially affects your rights,
+            we will provide appropriate notice where
+            required by law.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">19</span>
+
+          <h2>
+            Governing law
+          </h2>
+
+          <p>
+            These Terms are governed by Belgian law,
+            without prejudice to any mandatory consumer
+            protection rights that apply to you under the
+            laws of your country of residence.
+          </p>
+
+          <p>
+            If you are a consumer residing in the European
+            Economic Area, you retain any mandatory rights
+            and jurisdiction protections available to you
+            under applicable consumer law.
+          </p>
+
+        </section>
+
+        <section class="legal-section">
+
+          <span class="section-number">20</span>
+
+          <h2>
+            Contact
+          </h2>
+
+          <p>
+            Questions about these Terms may be sent to:
+          </p>
+
+          <div class="contact-card">
+
+            <p>
+              <strong>Thomas Boudru</strong><br />
+              Niz<br />
+              Enterprise number: BE0627.980.869<br />
+              Place du Parc 85<br />
+              4020 Liège<br />
+              Belgium<br /><br />
+
+              Email:
+              <a href="mailto:hey@joinniz.com">
+                hey@joinniz.com
+              </a>
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <a
+        class="footer-brand"
+        href="index.html"
+      >
+        <img
+          src="images/logo.png"
+          alt="Niz logo"
+        />
+
+        <span>
+          Niz
+        </span>
+      </a>
+
+      <div class="footer-links">
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms of Use
+        </a>
+
+        <a href="mailto:hey@joinniz.com">
+          Contact
+        </a>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Niz · Thomas Boudru · BE0627.980.869
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

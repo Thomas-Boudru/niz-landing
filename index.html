@@ -58,27 +58,37 @@
     }
 
 
-    html {
-      scroll-behavior: smooth;
-    }
+   html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+body {
+  margin: 0;
 
-    body {
-      margin: 0;
+  width: 100%;
+  max-width: 100%;
 
-      background: var(--bg);
-      color: var(--ink);
+  background: var(--bg);
+  color: var(--ink);
 
-      font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
 
-      font-size: 16px;
-      line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.55;
 
-      -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 
-      overflow-x: hidden;
-    }
+  overflow-x: hidden;
+}
 
+main,
+section,
+.wrap {
+  max-width: 100%;
+}
 
     h1,
     h2,
@@ -1787,6 +1797,25 @@
       font-size: 13px;
     }
 
+    .footer-links {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  color: var(--ink-mute);
+
+  font-size: 13px;
+}
+
+.footer-links a {
+  transition: color 0.18s ease;
+}
+
+.footer-links a:hover {
+  color: var(--ink);
+}
+
 
     /* ---------------------------------
        RESPONSIVE
@@ -1875,6 +1904,26 @@
       }
     }
 
+    @media (max-width: 390px) {
+
+  .hero-visual {
+    min-height: 285px;
+  }
+
+  .hero-phone {
+    width: 195px;
+    max-width: 56vw;
+  }
+
+  .hero-replies {
+    width: 125px;
+
+    right: 5%;
+    bottom: 24px;
+  }
+
+}
+
 
     @media (
       max-width:
@@ -1887,6 +1936,33 @@
         padding-right: 20px;
       }
 
+      .footer-row {
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.footer-links {
+  width: 100%;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+.fine {
+  width: 100%;
+}
+
+
+      .hero-glow {
+  width: 280px;
+  height: 280px;
+}
+
+.hero-grid {
+  min-height: auto;
+  gap: 24px;
+}
 
       .nav-links {
         display: none;
@@ -1917,24 +1993,33 @@
 
 
       .hero-visual {
-        min-height: 430px;
-      }
+  width: 100%;
+  min-height: 310px;
 
+  margin: 0 auto 8px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
       .hero-phone {
-        width: 285px;
+  width: 215px;
+  max-width: 58vw;
 
-        max-width: 75vw;
-      }
+  transform: rotate(1deg);
+}
 
+     .hero-replies {
+  width: 140px;
 
-      .hero-replies {
-        width: 185px;
+  right: 7%;
+  bottom: 25px;
 
-        right: 0;
-
-        bottom: 22px;
-      }
+  transform: rotate(-2deg);
+}
 
 
       .headline {
@@ -2223,8 +2308,7 @@
             class="hero-note"
           >
 
-            Accès via TestFlight · aucune capture
-            n'est conservée après la génération
+            Accès via TestFlight · Niz ne conserve pas tes captures dans un historique de conversation.
 
           </p>
 
@@ -3523,41 +3607,50 @@
 
   <footer>
 
-    <div
-      class="wrap footer-row"
+  <div class="wrap footer-row">
+
+    <a
+      href="#"
+      class="brand"
+      aria-label="Niz"
     >
 
+      <img
+        src="images/logo.png"
+        alt="Logo Niz"
+      />
 
-      <a
-        href="#"
-        class="brand"
-      >
+      <span>
+        Niz
+      </span>
 
-        <img
-          src="images/logo.png"
-          alt="Logo Niz"
-        />
+    </a>
 
-        <span>
-          Niz
-        </span>
 
+    <div class="footer-links">
+
+      <a href="privacy.html">
+        Privacy Policy
       </a>
 
+      <a href="terms.html">
+        Terms of Use
+      </a>
 
-      <p
-        class="fine"
-      >
-
-        © 2026 Niz.
-        Fait pour ceux qui cherchent leurs mots.
-
-      </p>
-
+      <a href="mailto:hey@joinniz.com">
+        Contact
+      </a>
 
     </div>
 
-  </footer>
+
+    <p class="fine">
+      © 2026 Niz · Thomas Boudru · BE0627.980.869
+    </p>
+
+  </div>
+
+</footer>
 
 
   <script>
